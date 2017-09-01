@@ -24,7 +24,7 @@ namespace Farshidi_MVC06.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-
+        public DbSet<Person> Persons { get; set; }
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
